@@ -1,10 +1,10 @@
-# API REST con datos de ejemplo
+# API REST con datos de ejemplo
 
 Este proyecto es un despliegue de una API REST con datos de ejemplo. Consta de 100 registros ficticios de persona generados con [Faker](https://github.com/fzaninotto/Faker). La API REST está desarrollada con Slim y se despliega con Docker. El proyecto se compone de dos contenedores, uno para Slim y otro para Nginx.
 
 Este proyecto es una continuación de [SlimHelloWorld](https://github.com/ualmtorres/SlimHelloWorld).
 
-## Instalación
+## Instalación
 
 Basta con clonar el repositorio y ejecutar el siguiente comando:
 
@@ -12,7 +12,7 @@ Basta con clonar el repositorio y ejecutar el siguiente comando:
 docker-compose up -d
 ```
 
-## Acceso a la API REST
+## Acceso a la API REST
 
 La API REST se despliega en `http://localhost:8080`. Si accedemos a `http://localhost:8080/api/people`, deberíamos ver un listado de 100 registros ficticios de persona.
 
