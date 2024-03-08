@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Documentation</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>API REST de ejemplo para Personas</h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Endpoint</th>
+            <th>Descripción</th>
+            <th>Método</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>/api/people</code></td>
+            <td>Devuelve todas las personas</td>
+            <td>GET</td>
+          </tr>
+          <tr>
+            <td><code>/api/people/{id}</code></td>
+            <td>Devuelve una persona por ID</td>
+            <td>GET</td>
+          </tr>
+          <tr>
+            <td><code>/api/peopleByEmail?email={email}</code></td>
+            <td>Devuelve a una persona por email</td>
+            <td>GET</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="container">
+      <h2>Muestra del JSON de una persona</h2>
+      <pre>
+        <code> 
+        {
+            "id": 1,
+            "name": "Julianne Mueller",
+            "email": "claire77@satterfield.com",
+            "phoneNumber": "318-981-1161",
+            "dateOfBirth": "2004-12-07",
+            "company": "Kunde Group",
+            "imageUrl": "https://via.placeholder.com/640x480.png/005544?text=ipsam",
+            "address": {
+                "street": "Lennie Corners",
+                "number": "5940",
+                "city": "North Cordie",
+                "state": "Indiana",
+                "zip": "75592"
+            },
+            "description": "Ex dicta hic inventore asperiores illum est. Non quia dicta in. Provident qui a voluptatem dignissimos error sit labore quos. Rerum repudiandae est nostrum et voluptas.",
+            "favoriteColors": [
+                "yellow",
+                "aqua",
+                "purple"
+            ]
+        } 
+        </code>
+    </pre>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
